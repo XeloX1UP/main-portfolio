@@ -14,7 +14,7 @@ export default function WriteMe() {
     <form
       ref={writeMeRef}
       id="writeMe"
-      className="px-10 transition-all duration-150  md:flex-1"
+      className="px-10 transition-all duration-500  md:flex-1 py-5 md:py-0"
     >
       <div className="flex justify-center gap-5 items-center">
         <h2 className="text-2xl">Escríbeme</h2>
