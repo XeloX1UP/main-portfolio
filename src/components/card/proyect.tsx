@@ -16,7 +16,7 @@ export default function Proyect({
         {href ? (
           <Link
             href={href}
-            className="text-3xl text-center underline text-lime-400 hover:text-amber-300 font-extrabold"
+            className="text-3xl text-center underline text-lime-400 hover:text-amber-300 font-extrabold italic"
             target="_blank"
           >
             {title}
@@ -55,7 +55,7 @@ export default function Proyect({
             .map((technology) => (
               <p
                 key={technology}
-                className="text-slate-400 hover:text-slate-50 hover:cursor-pointer transition-all duration-200"
+                className="text-slate-400 hover:text-slate-50 hover:cursor-pointer transition-all duration-200 italic"
               >{`#${technology}`}</p>
             ))}
         </div>

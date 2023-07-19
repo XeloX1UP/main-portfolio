@@ -22,6 +22,13 @@ export default function WriteMe() {
   const sendEmail = () => {};
   const handleClick = () => {
     if (!isValidForm) return;
+    if (
+      formData.name == "" ||
+      formData.email == "" ||
+      formData.subject == "" ||
+      formData.message == ""
+    )
+      return;
     const form = writeMeRef.current;
     sendEmail();
     alert(
