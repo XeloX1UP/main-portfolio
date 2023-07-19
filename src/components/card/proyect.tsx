@@ -16,7 +16,8 @@ export default function Proyect({
         {href ? (
           <Link
             href={href}
-            className="text-3xl text-center underline text-amber-400 font-extrabold"
+            className="text-3xl text-center underline text-lime-400 hover:text-amber-300 font-extrabold"
+            target="_blank"
           >
             {title}
           </Link>

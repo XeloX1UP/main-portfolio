@@ -22,6 +22,7 @@ const proyects: ProyectProps[] = [
       "HTML",
       "CSS",
     ],
+    href: "https://rifas-x1up-xelox1up.vercel.app/",
   },
   {
     title: "App pago de propinas",
@@ -47,7 +48,7 @@ const proyects: ProyectProps[] = [
   {
     title: "Landing page",
     description:
-      "Landing page de unrestaurante, con animaciones y efectos de scroll.",
+      "Landing page de un restaurante, con animaciones y efectos de scroll.",
     images: Object.values(secondLandingImages),
     technologies: ["HTML", "CSS", "JavaScript", "ReactJS", "NodeJS"],
   },
