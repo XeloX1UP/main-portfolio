@@ -23,7 +23,7 @@ export const validateWriteMe = ({
   if (!email) {
     errors.email = "El email es obligatorio";
     errors.hasErrors = true;
-  } else if (!/\S+@\S+\.\S+/.test(email)) {
+  } else if (!/^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(email)) {
     errors.email = "El email es incorrecto";
     errors.hasErrors = true;
   }

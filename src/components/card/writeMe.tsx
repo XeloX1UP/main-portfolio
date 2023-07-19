@@ -77,7 +77,7 @@ export default function WriteMe() {
           } text-white text-xl p-2 my-4`}
           placeholder="Nombre completo"
           onChange={(e) => {
-            setFormData({ ...formData, name: e.target.value });
+            setFormData({ ...formData, name: e.target.value.trim() });
           }}
           onBlur={(e) => {
             handleBlur();
@@ -93,7 +93,7 @@ export default function WriteMe() {
           } text-white text-xl p-2 my-4`}
           placeholder="Correo electrónico"
           onChange={(e) => {
-            setFormData({ ...formData, email: e.target.value });
+            setFormData({ ...formData, email: e.target.value.trim() });
           }}
           onBlur={(e) => {
             handleBlur();
@@ -109,7 +109,7 @@ export default function WriteMe() {
           } text-white text-xl p-2 my-4`}
           placeholder="Asunto"
           onChange={(e) => {
-            setFormData({ ...formData, subject: e.target.value });
+            setFormData({ ...formData, subject: e.target.value.trim() });
           }}
           onBlur={(e) => {
             handleBlur();
@@ -127,7 +127,7 @@ export default function WriteMe() {
           placeholder="Mensaje"
           maxLength={1000}
           onChange={(e) => {
-            setFormData({ ...formData, message: e.target.value });
+            setFormData({ ...formData, message: e.target.value.trim() });
           }}
           onBlur={(e) => {
             handleBlur();
