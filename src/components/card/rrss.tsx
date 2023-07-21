@@ -6,19 +6,22 @@ const rrSsList = [
     name: "LinkedIn",
     href: "https://www.linkedin.com/in/eduardo-moncada-lillo-25b336225/",
     icon: <LinkedInSvg />,
-    color: "blue-500",
+    textColor: "text-blue-500",
+    shadowColor: "shadow-blue-400",
   },
   {
     name: "GitHub",
     href: "https://github.com/XeloX1UP",
     icon: <GitHubSvg />,
-    color: "gray-500",
+    textColor: "text-white",
+    shadowColor: "shadow-gray-400",
   },
   {
     name: "Twitter",
     href: "https://twitter.com/XeloX_1UP",
     icon: <TwitterSvg />,
-    color: "blue-400",
+    textColor: "text-blue-500",
+    shadowColor: "shadow-blue-400",
   },
 ];
 
