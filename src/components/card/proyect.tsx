@@ -11,23 +11,21 @@ export default function Proyect({
   href,
 }: ProyectProps) {
   return (
-    <div className="bg-gradient-to-bl from-slate-900 to-slate-950 w-full border-2 border-black rounded-xl shadow-black shadow-lg overflow-hidden sm:w-80 lg:w-96 transition-all duration-150">
-      <div className="text-white p-3">
+    <div className="w-full rounded-lg overflow-hidden sm:w-80 lg:w-96 transition-all duration-150 group bg-[var(--bg-300)]">
+      <div className="bg-[var(--bg-200)] p-3">
         {href ? (
           <Link
             href={href}
-            className="text-3xl text-center underline text-lime-400 hover:text-amber-300 font-extrabold italic"
+            className="text-3xl text-center underline transition-all duration-150 text-[var(--text-200)] hover:text-[var(--accent-100)] font-extrabold italic"
             target="_blank"
           >
             {title}
           </Link>
         ) : (
-          <h3 className="text-3xl text-center underline text-amber-400 font-extrabold">
-            {title}
-          </h3>
+          <h3 className="text-3xl text-center font-extrabold">{title}</h3>
         )}
       </div>
-      <div className="w-full relative h-72 grayscale hover:grayscale-0 hover:scale-105 transition-all duration-500">
+      <div className="w-full relative h-72">
         <Image
           src={images[0]}
           alt={title}
@@ -35,17 +33,19 @@ export default function Proyect({
           className="object-cover object-center"
         />{" "}
       </div>
-      <div className="p-3 flex flex-row flex-wrap justify-between text-white">
+      <div className="p-3 flex flex-row flex-wrap justify-between">
         <div className="w-1/3 ">
-          <h4 className="text-end text-2xl text-amber-400">Descripción</h4>
+          <h4 className="text-end text-2xl text-[var(--primary-200)]">
+            Descripción
+          </h4>
         </div>
         <div className="w-1/2 ">
           <p className="text-start text-xl">{description}</p>
         </div>
       </div>
-      <div className="p-3 flex flex-row flex-wrap justify-between text-white">
+      <div className="p-3 flex flex-row flex-wrap justify-between">
         <div className="w-1/3 ">
-          <h4 className="text-end text-2xl text-amber-400">
+          <h4 className="text-end text-2xl text-[var(--primary-200)]">
             Tecnologías usadas
           </h4>
         </div>
@@ -55,7 +55,7 @@ export default function Proyect({
             .map((technology) => (
               <p
                 key={technology}
-                className="text-slate-400 hover:text-slate-50 hover:cursor-pointer transition-all duration-200 italic"
+                className="text-[var(--text-200)] hover:text-[var(--accent-200)] hover:cursor-pointer transition-all duration-200 italic"
               >{`#${technology}`}</p>
             ))}
         </div>

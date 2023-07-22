@@ -4,10 +4,10 @@ const nextConfig = {
     domains: [
       "d2nir1j4sou8ez.cloudfront.net",
       "styles.redditmedia.com",
-      "icons-for-free.com",
+      "www.code2inspire.com",
       "cdn-icons-png.flaticon.com",
       "d4.alternativeto.net",
-      "getbootstrap.com",
+      "icon-library.com",
     ],
   },
 };

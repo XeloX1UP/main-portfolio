@@ -56,9 +56,9 @@ const proyects: ProyectProps[] = [
 
 export default function ProyectSection() {
   return (
-    <section className="my-44 md:flex-1 w-full text-center">
-      <h1 className="text-5xl text-amber-400 font-bold mb-8">Proyectos</h1>
-      <div className="flex flex-row flex-wrap justify-evenly gap-3 md:gap-6">
+    <section className="mt-56 text-center">
+      <h1 className="text-5xl font-bold">Proyectos</h1>
+      <div className="flex flex-row flex-wrap justify-evenly gap-12 mt-24">
         {proyects.map((proyect) => (
           <Proyect {...proyect} key={proyect.title} />
         ))}

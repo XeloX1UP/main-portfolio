@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`p-5 md:p-10 h-full min-h-screen min-w-min bg-gradient-to-bl from-black to-slate-900 ${rokkitt.className}`}
+        className={`p-5 md:p-10 h-full min-h-screen min-w-min ${rokkitt.className}`}
       >
         {children}
       </body>
